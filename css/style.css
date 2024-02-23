@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --green: 66, 185, 121;
+    --white: 255, 255, 255;
+}
+.dropdown_heading::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-image: url(../images/d-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+header{
+    max-width: 1024px;
+}
+header{
+    height: 10vh;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 200px;
+    object-fit: contain;
+}
+header nav ul li:not(li a){
+    display: inline-block;
+}
+header nav ul li a{
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+header nav ul li:last-child a{
+    background-color: rgb(var(--green));
+    color: #fff;
+}
+header nav ul li:nth-last-child(2) a{
+    border: 2px solid #333;
+}
+header nav ul li:nth-last-child(2) a:hover{
+    background-color: rgb(var(--green));
+    color: rgb(var(--white));
+    border: 2px solid transparent;
+}
