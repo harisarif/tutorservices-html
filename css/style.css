@@ -4,20 +4,34 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
 :root{
     --green: 66, 185, 121;
     --white: 255, 255, 255;
+    --text: #444;
 }
 .dropdown_box{
     position: relative;
+    z-index: 99;
 }
 .dropdown_ul{
     position: absolute;
     top: 35px;
     left: -20px;
     width: 150px;
+    z-index: 999;
     height: 0;
     overflow: hidden;
+    background-color: rgb(var(--white));
+}
+.dropdown_li{
+    border-bottom: 1px solid #eee;
+}
+.dropdown_li:last-child{
+    border-bottom: none;
 }
 .dropdown_li a:hover{
     background-color: rgb(var(--green));
@@ -42,6 +56,7 @@
 }
 header{
     max-width: 1024px;
+    background-color: red;
 }
 header{
     height: 10vh;
@@ -60,22 +75,61 @@ header nav ul li:not(li a){
 }
 header nav ul li a{
     display: block;
-    color: #333;
+    color: var(--text);
     text-align: center;
     padding: 10px;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 2px;
+    text-transform: capitalize;
 }
 .signUp{
     background-color: rgb(var(--green));
     color: #fff;
 }
 .login{
-    border: 2px solid #333;
+    border: 2px solid rgb(var(--green));
 }
 .login:hover{
     background-color: rgb(var(--green));
     color: rgb(var(--white));
     border: 2px solid transparent;
+}
+.banner{
+    height: 90vh;
+    background-image: url(/images/banner_img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+}
+.intro_lines{
+    margin: auto 50px;
+    width: 400px;
+    padding: 10px;
+}
+.banner .intro_lines h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--text);
+}
+.banner .intro_lines h1 span{
+    background-color: rgb(var(--green));
+    padding: 10px;
+    color: rgb(var(--white));
+}
+.banner .intro_lines button
+{
+    font-size: 1.1rem;
+    color: rgb(var(--white));
+    background-color: rgb(var(--green));
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.outline_border{
+    border: 2px solid rgb(var(--white));
+}
+.outline_hover:hover{
+    outline: 2px solid rgb(var(--green));
 }
