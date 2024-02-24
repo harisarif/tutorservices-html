@@ -17,6 +17,31 @@ a:hover{
     --white: 255, 255, 255;
     --text: #444;
 }
+.solid_btn
+{
+    font-size: 1.1rem;
+    color: rgb(var(--white));
+    background-color: rgb(var(--green));
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+    border: 2px solid rgb(var(--white));
+}
+.regular_btn{
+    font-size: 1.1rem;
+    color: var(--text);
+    background-color: rgb(var(--white));
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+    border: 2px solid rgb(var(--green));
+}
+
+.regular_btn:hover{
+    background-color: rgb(var(--green));
+    color: rgb(var(--white));
+    border: 2px solid transparent;
+}
 .dropdown_box{
     position: relative;
     z-index: 99;
@@ -67,7 +92,7 @@ header{
     background-color: #fff;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 header img{
@@ -87,25 +112,12 @@ header nav ul li a{
     border-radius: 2px;
     text-transform: capitalize;
 }
-.signUp{
-    background-color: rgb(var(--green));
-    color: #fff;
-}
-.login{
-    border: 2px solid rgb(var(--green));
-}
-.login:hover{
-    background-color: rgb(var(--green));
-    color: rgb(var(--white));
-    border: 2px solid transparent;
-}
-.banner{
-    height: 90vh;
+
+.bgImage{
     background-image: url(/images/banner_img.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
+    background-position: center;
 }
 .intro_lines{
     margin: auto 50px;
@@ -122,15 +134,7 @@ header nav ul li a{
     padding: 10px;
     color: rgb(var(--white));
 }
-.banner .intro_lines button
-{
-    font-size: 1.1rem;
-    color: rgb(var(--white));
-    background-color: rgb(var(--green));
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin: 10px 0;
-}
+
 .outline_border{
     border: 2px solid rgb(var(--white));
 }
