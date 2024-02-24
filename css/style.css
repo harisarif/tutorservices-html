@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 main{
-    max-width: 1024px;
+    /* max-width: 1024px; */
     margin: 0 auto;
 }
 :root{
@@ -55,7 +55,7 @@ main{
     display: block;
 }
 header{
-    max-width: 1024px;
+    /* max-width: 1024px; */
     background-color: red;
 }
 header{
