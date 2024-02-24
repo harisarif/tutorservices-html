@@ -8,6 +8,10 @@ main{
     /* max-width: 1024px; */
     margin: 0 auto;
 }
+a:hover{
+    text-decoration: none;
+    color: var(--text);
+}
 :root{
     --green: 66, 185, 121;
     --white: 255, 255, 255;
@@ -51,6 +55,7 @@ main{
     background-size: contain;
     display: inline-block;
 }
+
 .dropdown_li{
     display: block;
 }
