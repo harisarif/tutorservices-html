@@ -8,6 +8,25 @@
     --green: 66, 185, 121;
     --white: 255, 255, 255;
 }
+.dropdown_box{
+    position: relative;
+}
+.dropdown_ul{
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+}
+.dropdown_li a:hover{
+    background-color: rgb(var(--green));
+    color: rgb(var(--white));
+}
+
+.dropdown_box:hover .dropdown_ul{
+    height: auto;
+}
 .dropdown_heading::after{
     content: '';
     width: 10px;
@@ -17,6 +36,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+}
+.dropdown_li{
+    display: block;
 }
 header{
     max-width: 1024px;
@@ -45,14 +67,14 @@ header nav ul li a{
     font-size: 1.2rem;
     border-radius: 2px;
 }
-header nav ul li:last-child a{
+.signUp{
     background-color: rgb(var(--green));
     color: #fff;
 }
-header nav ul li:nth-last-child(2) a{
+.login{
     border: 2px solid #333;
 }
-header nav ul li:nth-last-child(2) a:hover{
+.login:hover{
     background-color: rgb(var(--green));
     color: rgb(var(--white));
     border: 2px solid transparent;
