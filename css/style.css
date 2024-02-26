@@ -142,7 +142,7 @@ header nav ul li a{
 }
 
 .bgImage{
-    background-image: url('../images/banner_img.png');
+    background-image: url(/images/banner_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
