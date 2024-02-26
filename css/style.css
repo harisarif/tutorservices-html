@@ -8,15 +8,40 @@ main{
     /* max-width: 1024px; */
     margin: 0 auto;
 }
+::selection{
+    background-color: rgb(var(--green));
+    color: rgb(var(--white));
+}
 a:hover{
     text-decoration: none;
-    color: var(--text);
+    color: rgb(var(--text));
 }
 :root{
     --green: 66, 185, 121;
     --white: 255, 255, 255;
-    --text: #444;
+    --text: 68, 68, 68;
 }
+.varified{
+    width: 15px;
+    height: 15px;
+    display: grid !important;
+    place-items: center;
+    font-size: .5rem;
+}
+.full-img{
+    width: 100%;
+    height: 100%;
+}
+.img-1{
+    width: 100px;
+    height: 100px;
+}
+.img-2{
+    width: 200px;
+    height: 200px;
+}
+
+
 .solid_btn
 {
     font-size: 1.1rem;
@@ -29,7 +54,7 @@ a:hover{
 }
 .regular_btn{
     font-size: 1.1rem;
-    color: var(--text);
+    color: rgb(var(--text));
     background-color: rgb(var(--white));
     padding: 5px 10px;
     border-radius: 3px;
@@ -84,6 +109,9 @@ a:hover{
 .dropdown_li{
     display: block;
 }
+/* .face{
+    height: 100vh;
+} */
 header{
     /* max-width: 1024px; */
     background-color: red;
@@ -104,7 +132,7 @@ header nav ul li:not(li a){
 }
 header nav ul li a{
     display: block;
-    color: var(--text);
+    color: rgb(var(--text));
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -119,6 +147,7 @@ header nav ul li a{
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .intro_lines{
     margin: auto 50px;
     width: 400px;
@@ -127,7 +156,7 @@ header nav ul li a{
 .banner .intro_lines h1{
     font-size: 2rem;
     line-height: 3rem;
-    color: var(--text);
+    color: rgb(var(--text));
 }
 .banner .intro_lines h1 span{
     background-color: rgb(var(--green));
@@ -140,4 +169,34 @@ header nav ul li a{
 }
 .outline_hover:hover{
     outline: 2px solid rgb(var(--green));
+}
+
+.tutorLinks{
+    display: inline-block;
+    color: rgb(var(--text));
+    text-align: center;
+    padding-right: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.tutorLinks::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: rgb(var(--green));
+    transition: .3s;
+}
+.tutorLinks:hover::after{
+    width: 100%;
+}
+.tutor_navigate{
+    display: inline-block;
+    color: rgba(var(--text), .5);
+}
+.activeLink{
+    color: rgb(var(--green));
+}
+.activeLink:hover{
+    color: rgba(var(--green), 1);
 }
