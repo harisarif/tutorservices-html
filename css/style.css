@@ -109,6 +109,19 @@ a:hover{
 .dropdown_li{
     display: block;
 }
+.description-tutor {
+    background-color: #fafafa;
+    line-height: 30px;
+}
+.banner-section {
+    height: 390px;
+}
+.tutor_profile {
+    height: 250px;
+}
+.bookmark {
+    color: gray;
+}
 /* .face{
     height: 100vh;
 } */
@@ -149,9 +162,8 @@ header nav ul li a{
 }
 
 .intro_lines{
-    margin: auto 50px;
-    width: 400px;
-    padding: 10px;
+    margin: 75px 50px;
+    /* margin-top: 20px; */
 }
 .banner .intro_lines h1{
     font-size: 2rem;
@@ -193,6 +205,8 @@ header nav ul li a{
 .tutor_navigate{
     display: inline-block;
     color: rgba(var(--text), .5);
+    font-weight: 600;
+    padding: 5px;
 }
 .activeLink{
     color: rgb(var(--green));
