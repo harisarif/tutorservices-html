@@ -234,5 +234,14 @@ header nav ul li a{
     border-top: 1px dashed #ddd;
 }
 
+.filter_ul{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.filter_ul li:nth-child(even){
+    background-color: #ddd;
+}
+
 
 
