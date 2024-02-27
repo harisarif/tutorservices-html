@@ -41,6 +41,13 @@ a:hover{
     height: 200px;
 }
 
+.box-3{
+    width: 30px;
+    height: 30px;
+}
+.bg_theme_green{
+    background-color: rgba(var(--green), 1);
+}
 
 .solid_btn
 {
@@ -95,7 +102,7 @@ a:hover{
 .dropdown_box:hover .dropdown_ul{
     height: auto;
 }
-.dropdown_heading::after{
+.down_arrow::after{
     content: '';
     width: 10px;
     height: 10px;
@@ -116,9 +123,7 @@ a:hover{
 .banner-section {
     height: 390px;
 }
-.tutor_profile {
-    height: 250px;
-}
+
 .bookmark {
     color: gray;
 }
@@ -184,11 +189,11 @@ header nav ul li a{
 }
 
 .tutorLinks{
-    display: inline-block;
+    /* display: inline-block; */
     color: rgb(var(--text));
-    text-align: center;
+    /* text-align: center; */
     padding-right: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 2px;
 }
 .tutorLinks::after{
@@ -203,9 +208,9 @@ header nav ul li a{
     width: 100%;
 }
 .tutor_navigate{
-    display: inline-block;
+    /* display: inline-block; */
     color: rgba(var(--text), .5);
-    font-weight: 600;
+    /* font-weight: 600; */
     padding: 5px;
 }
 .activeLink{
@@ -214,3 +219,20 @@ header nav ul li a{
 .activeLink:hover{
     color: rgba(var(--green), 1);
 }
+
+.tutor_profile {
+    min-height: 300px;
+    height: auto;
+    box-shadow: 0 0 2px 1px #ddd;
+}
+.profile_card .imgBox{
+    width: 100px;
+}
+
+.bd_top_dashed
+{
+    border-top: 1px dashed #ddd;
+}
+
+
+
