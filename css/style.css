@@ -12,10 +12,6 @@ main{
     background-color: rgb(var(--green));
     color: rgb(var(--white));
 }
-a:hover{
-    text-decoration: none;
-    color: rgb(var(--text));
-}
 :root{
     --green: 66, 185, 121;
     --white: 255, 255, 255;
@@ -106,7 +102,7 @@ a:hover{
     content: '';
     width: 10px;
     height: 10px;
-    margin: 0 5px;
+    margin: -3px 6px;
     background-image: url(../images/d-arrow.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,7 +150,7 @@ header nav ul li a{
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: .9rem;
     border-radius: 2px;
     text-transform: capitalize;
 }
@@ -193,8 +189,6 @@ header nav ul li a{
     color: rgb(var(--text));
     /* text-align: center; */
     padding-right: 10px;
-    /* font-weight: bold; */
-    letter-spacing: 2px;
 }
 .tutorLinks::after{
     content: '';
@@ -239,7 +233,7 @@ header nav ul li a{
     overflow-y: scroll;
 }
 
-.filter_ul li:nth-child(even){
+.filter_ul li:hover{
     background-color: #ddd;
 }
 .qualities {
@@ -266,6 +260,20 @@ header nav ul li a{
         font-size: 11px;
         margin-left: 6px;
         margin-top: 3px;
-        font-weight: 600;
-  
+        font-weight: 600; 
+}
+
+.font-s{
+    font-size: 14px;
+}
+.label-h{
+    display: inline-block;
+    width: 90px;
+}
+.font-s1{
+    font-size: 14px;
+}
+.bg_green_hover:hover{
+    background-color: rgba(var(--green),1) !important;
+    color: rgb(var(--white));
 }

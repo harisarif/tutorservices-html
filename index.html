@@ -66,7 +66,7 @@
                     <ul class="mb-0">
                         <li class="dropdown_box">
                             <a href="#" class="dropdown_heading down_arrow">Country</a>
-                            <ul class="dropdown_ul">
+                            <ul class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#2">dropdown-link</a></li>
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#3">dropdown-link</a></li>
@@ -76,7 +76,7 @@
                         </li>
                         <li class="dropdown_box">
                             <a href="#" class="dropdown_heading down_arrow">More</a>
-                            <ul class="dropdown_ul">
+                            <ul class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a href="#2">dropdown-link</a></li>
                                 <li class="dropdown_li"><a href="#3">dropdown-link</a></li>
@@ -86,7 +86,7 @@
                         </li>
                         <li><a href="#2">Hire</a></li>
                         <li><a class="regular_btn" href="#3">Login</a></li>
-                        <li><a class="solid_btn" href="#4">Sign Up</a></li>
+                        <li><a class="solid_btn outline_hover" href="#4">Sign Up</a></li>
                     </ul>
                 </nav>
             </header>
@@ -104,8 +104,7 @@
                     <button class="outline_hover solid_btn">Tutor</button>
                 </div>
                 <div class="col-6 p-0">
-                    <img src="images/banner_img.png" class="full-img" alt="banner_img"
-                        style="width:500px !important;height: 350px; ">
+                    <img src="images/banner_img.png" class="full-img" alt="banner_img">
                 </div>
             </section>
             <!--  -->
@@ -164,66 +163,68 @@
                         </div>
 
                         <div class="p-3">
-                            <div class="row">
-                                <div class="col-5">
-                                    
-                                    <div class="personal_detail d-flex">
-                                        <div>
-                                            <img class="img-1 rounded-circle" src="./images/profile_dp.png" alt="">
-                                            <p class="d-flex align-items-center m-auto">Verified <span
-                                                    class="mx-1 varified bg-primary rounded-circle text-light"><i
-                                                        class="fa fa-check"></i></span></p>
-                                        </div>
-                                        <div>
-                                            <h5>TutorName</h5>
-                                            <span>Female, 42 years <span>Pro</span></span>
-                                            <p class="m-0">15 years of teaching experience</p>
-                                            <span class="d-flex align-items-center text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                            <p class="text-danger m-0">( 10 reviews )</p>
-                                        </div>
-                                    </div>
+                            <div class="d-flex gap-2">
+                                <div class="imgBox d-grid">
+                                    <img class="img-1 rounded-circle" src="./images/profile_dp.png" alt="">
+                                    <p class="d-flex align-items-center m-auto">Verified <span
+                                            class="mx-1 varified bg-primary rounded-circle text-light"><i
+                                                class="fa fa-check"></i></span></p>
                                 </div>
+                                <div class="personal_detail">
+                                    <h5>TutorName</h5>
+                                    <span>Female, 42 years <span class="bg-danger text-light font-s px-1 rounded">Pro</span></span>
+                                    <p class="m-0">15 years of teaching experience</p>
+                                    <span class="d-flex align-items-center text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="text-danger m-0">( 10 reviews )</p>
+                                </div>
+
                                 <div class="qualification col-7">
-                                    <p class="m-0 fs-6 text-secondary qualities-wrapper"><span class="qualities">Qualification<small class="details">:</small> </span><span class="text-dark qualities-detail">Master in
+                                    <p class="m-0 fs-6 text-secondary">
+                                      <span class="label-h font-s">Qualification</span>:
+                                         <span class="text-dark font-s fw-bold">Master in
                                             Teaching</span></p>
-                                    <p class="m-0 fs-6 text-secondary qualities-wrapper"><span class="qualities">Location</span><small class="details">:</small><span class="text-dark qualities-detail">Amin town,
-                                            Askari plaza, 1st floor</span> <span class="text-danger d-block more-result">8+
+                                    <p class="m-0 fs-6 text-secondary">
+                                        <span class="label-h font-s">Location</span>:
+                                         <span class="text-dark font-s fw-bold">Amin town,
+                                            Askari plaza, 1st floor</span> <span class="text-danger font-s fw-light">8+
                                             More</span></p>
-                                    <p class="m-0 fs-6 text-secondary qualities-wrapper"><span class="qualities">Mobile</span><small class="details">:</small> <span class="text-dark qualities-detail">+92 318
-                                            xxxxxxxxx</span> <span class="text-success">view contact</span
-                                            class="text-dark"></p>
-                                    <p class="m-0 fs-6 text-secondary qualities-wrapper"><span class="qualities">WhatsApp</span><small class="details">:</small> <span class="text-dark qualities-detail">+92 318
-                                            xxxxxxxxx</span> <span class="text-success">view contact</span></p>
+                                    <p class="m-0 fs-6 text-secondary">
+                                        <span class="label-h font-s">Mobile</span>: <span class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span
+                                            class="text-dark font-s"></p>
+                                    <p class="m-0 fs-6 text-secondary">
+                                        <span class="label-h font-s">WhatsApp</span>: <span class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span></p>
                                 </div>
 
 
                             </div>
 
                             <div class="row mt-3 ">
-                                <div class="col-12 d-flex m-1">
-                                    <h5 class="m-0 m-1">Teaches: </h5>
-                                    <span class="bg-body-secondary p-1 px-2 rounded mx-1">Business</span>
-                                    <span class="bg-body-secondary p-1 px-2 rounded mx-1">English as second
+                                <div class="col-12 d-flex m-1 align-items-center">
+                                    <h5 class="label-h m-0 m-1 font-s1">Teaches </h5> :
+                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">Business</span>
+                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English as second
                                         language</span>
-                                    <span class="bg-body-secondary p-1 px-2 rounded mx-1">English language</span>
+                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English language</span>
                                     <span class="m-1 text-danger">+1 more</span>
                                 </div>
-                                <div class="col-12 d-flex m-1">
-                                    <h5 class="m-0 m-1">Curriculum:</h5>
-                                    <span class="bg-body-secondary p-1 px-2 rounded mx-1">American Curriculum
+                                <div class="col-12 d-flex m-1 align-items-center">
+                                    <h5 class="label-h m-0 m-1 font-s1">Curriculum</h5>:
+                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">American Curriculum
                                         (AC)</span>
                                 </div>
                             </div>
 
                             <div class="bd_top_dashed mt-2 py-1 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <span class="down_arrow d-flex align-items-center">Expand</span>
+                                    <span class="down_arrow d-flex align-items-center px-2">Expand</span>
 
                                     <div class="d-flex">
                                         <p
@@ -248,7 +249,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex gap-1 align-items-center">
+                                <div class="d-flex gap-3 align-items-center">
                                     <a class="text-success text-decoration-none" href="#">Request a callback</a>
                                     <button class="bg_theme_green border border-0 text-light rounded p-2">Send Message</button>
                                 </div>
