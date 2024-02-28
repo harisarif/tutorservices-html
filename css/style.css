@@ -242,6 +242,30 @@ header nav ul li a{
 .filter_ul li:nth-child(even){
     background-color: #ddd;
 }
-
-
-
+.qualities {
+    color: var(--brownish-grey);
+    flex: 0 0 10rem;
+    max-width: 6rem;
+    margin-right: 0rem;
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.details {
+    margin-left: 5px;
+}
+.qualities-detail {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.qualities-wrapper {
+    display: flex;
+}
+.more-result {
+        font-size: 11px;
+        margin-left: 6px;
+        margin-top: 3px;
+        font-weight: 600;
+  
+}
