@@ -65,7 +65,10 @@
                 <nav>
                     <ul class="mb-0">
                         <li class="dropdown_box">
-                            <a href="#" class="dropdown_heading down_arrow">Country</a>
+                            <a href="#" class="dropdown_heading down_arrow">
+                                Country
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
                             <ul class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#2">dropdown-link</a></li>
@@ -75,7 +78,10 @@
                             </ul>
                         </li>
                         <li class="dropdown_box">
-                            <a href="#" class="dropdown_heading down_arrow">More</a>
+                            <a href="#" class="dropdown_heading down_arrow">
+                                More
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
                             <ul class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a href="#2">dropdown-link</a></li>
@@ -137,7 +143,7 @@
                     <hr>
                 </div>
                 
-                <div class="col-9 ">
+                <div class="col-8 ">
                     <div class="d-flex justify-content-between mb-2 p-2 bg-body-secondary align-items-center">
                         <p class="m-0">1 to 100 0f 34753 tutors</p>
 
@@ -157,7 +163,7 @@
                         <div class="d-flex justify-content-between">
                             <button class="p-1 bg_theme_green text-light border border-0">Sponsored</button>
                             <span class="p-1 text-secondary">
-                                <i class="fa fa-bookmark"></i>
+                                <i class="fa fa-bookmark text-body-tertiary"></i>
                                 Watchlist
                             </span>
                         </div>
@@ -172,7 +178,7 @@
                                 </div>
                                 <div class="personal_detail">
                                     <h5>TutorName</h5>
-                                    <span>Female, 42 years <span class="bg-danger text-light font-s px-1 rounded">Pro</span></span>
+                                    <span>Female, 42 years <span style="background-color: red;" class=" text-light font-s px-1">Pro</span></span>
                                     <p class="m-0">15 years of teaching experience</p>
                                     <span class="d-flex align-items-center text-warning">
                                         <i class="fa fa-star"></i>
@@ -203,7 +209,6 @@
                                             xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span></p>
                                 </div>
 
-
                             </div>
 
                             <div class="row mt-3 ">
@@ -224,7 +229,10 @@
 
                             <div class="bd_top_dashed mt-2 py-1 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <span class="down_arrow d-flex align-items-center px-2">Expand</span>
+                                    <span class="d-flex align-items-center px-2">
+                                        Expand
+                                        <i class="fa fa-chevron-down mx-1" aria-hidden="true"></i>
+                                    </span>
 
                                     <div class="d-flex">
                                         <p
@@ -259,28 +267,108 @@
                     </div>
 
                 </div><!-- col-8 end -->
-                <div class="col-3">
-                    <div>
-                        <div class="d-flex justify-content-between bg-body-secondary align-items-center px-1 py-2">
-                            Filter
-                            <i class="fa fa-filter text-secondary"></i>
-                        </div>
-                        <ul class="filter_ul p-0">
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
-                            <li class="d-block p-0 p-1">Country</li>
+                <div class="col-3 m-auto my-0 border p-0">
+                    <div class="col bg-body-secondary p-2">
+                        <span><i class="fas fa-filter"></i> Filter</span>
+                    </div>
+
+                    <div class="p-0 m-0 mx-2 px-2">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-1')">
+                            Subject
+                            <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                        </h5>
+                        <ul id="ul-toggle-1" class="rounded filter_ul p-0">
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-0 m-0 mx-2 px-2">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-2')">
+                            Curriculum
+                            <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                        </h5>
+                        <ul id="ul-toggle-2" class="rounded filter_ul p-0">
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-0 m-0 mx-2 px-2">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-3')">
+                            Aria
+                            <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                        </h5>
+                        <ul id="ul-toggle-3" class="rounded filter_ul p-0">
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-0 m-0 mx-2 px-2">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-4')">
+                            Cagtegories
+                            <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                        </h5>
+                        <ul id="ul-toggle-4" class="rounded filter_ul p-0">
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
+                            <li>English</li>
                         </ul>
                     </div>
                 </div>
@@ -289,6 +377,8 @@
             </section>
         </main>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
