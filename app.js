@@ -13,3 +13,16 @@ const toggleList = (heading, ToggleUl) => {
         heading.children[0].style.transform = 'rotate(0deg)'
     };
 }
+
+const dropDown = (dropDownContent) =>{
+    var dropContent = document.getElementById(dropDownContent);
+    if (dropContent.style.height != 'auto') {
+        dropContent.style.height = 'auto'
+    } else {
+        dropContent.style.height = '0'
+    }
+}
+const hideNShow = (toggleItem) => {
+    const vToggleItem = document.getElementById(toggleItem);
+    vToggleItem.classList.toggle('mb_filter');
+}

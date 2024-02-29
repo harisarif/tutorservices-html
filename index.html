@@ -39,8 +39,9 @@
                             </p>
                         </div>
                         <div class="startChat_wrapper">
-                            <a href="https://wa.me/+923186785311?text=Hi%20there,%20I%20visited%20the%20website%20of%20Edexcel%20Academy%20&%20Consultancy%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20me%20with%20some%20information%20or%20arrange%20a%20call%20to%20discuss%20further?%20Thanks!" class="start_chat"> <i
-                                    class="fab fa-whatsapp" aria-hidden="true"></i> Start
+                            <a href="https://wa.me/+923186785311?text=Hi%20there,%20I%20visited%20the%20website%20of%20Edexcel%20Academy%20&%20Consultancy%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20me%20with%20some%20information%20or%20arrange%20a%20call%20to%20discuss%20further?%20Thanks!"
+                                target="_blank" class="start_chat"> <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Start
                                 Chat</a>
                         </div>
                     </div>
@@ -60,16 +61,20 @@
 
             <!-- header start -->
             <header class="my-2">
-                <img src="images/logo.png" class="logo-image" alt="logo.png">
-
-                <nav>
+                <div class="d-flex align-items-center justify-content-between col-12 col-md-3">
+                    <img src="images/logo.png" class="logo-image" alt="logo.png">
+                    <div class="d-block d-md-none">
+                        <i class="fa fa-bars fs-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <nav class="d-none d-md-block">
                     <ul class="mb-0">
-                        <li class="dropdown_box">
+                        <li id="dropdown_box" onmouseleave="dropDown('dropdown-1')" onmouseenter="dropDown('dropdown-1')">
                             <a href="#" class="dropdown_heading down_arrow">
                                 Country
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </a>
-                            <ul class="dropdown_ul p-0">
+                            <ul id="dropdown-1" class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#2">dropdown-link</a></li>
                                 <li class="dropdown_li"><a class="text-decoration-none" href="#3">dropdown-link</a></li>
@@ -77,12 +82,12 @@
 
                             </ul>
                         </li>
-                        <li class="dropdown_box">
+                        <li id="dropdown_box" onmouseleave="dropDown('dropdown-2')" onmouseenter="dropDown('dropdown-2')">
                             <a href="#" class="dropdown_heading down_arrow">
                                 More
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </a>
-                            <ul class="dropdown_ul p-0">
+                            <ul  id="dropdown-2" class="dropdown_ul p-0">
                                 <li class="dropdown_li"><a href="#1">dropdown-link</a></li>
                                 <li class="dropdown_li"><a href="#2">dropdown-link</a></li>
                                 <li class="dropdown_li"><a href="#3">dropdown-link</a></li>
@@ -101,7 +106,7 @@
 
             <!-- banner start -->
             <section class="row banner-section">
-                <div class=" col-6 intro_lines mx-0">
+                <div class="col-12 col-md-6 intro_lines mx-0">
                     <h1><span>Edexcel</span> Academy & Consultent.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quis delectus voluptatibus optio
                         at
@@ -109,7 +114,7 @@
                     <button class="outline_hover solid_btn">Student</button>
                     <button class="outline_hover solid_btn">Tutor</button>
                 </div>
-                <div class="col-6 p-0">
+                <div class="col-12 col-md-6 p-0">
                     <img src="images/banner_img.png" class="full-img" alt="banner_img">
                 </div>
             </section>
@@ -124,7 +129,7 @@
                     <hr>
                 </div>
                 <div class="col-12">
-                    <h3>World Wide Tutor</h3>
+                    <h3 class="d-flex justify-content-between align-items-center">World Wide Tutor <i   onclick="hideNShow('filter-col')" class="fa fa-filter text-secondary d-inline-block d-md-none" aria-hidden="true"></i></h3>
                     <p class="border p-2 description-tutor">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore itaque a nemo aliquid
                         dicta, totam similique voluptatem fugiat atque sit? Rem praesentium corrupti nostrum obcaecati
@@ -142,8 +147,8 @@
                     <a class="tutor_navigate text-decoration-none activeLink" href="#">1370+</a>
                     <hr>
                 </div>
-                
-                <div class="col-8 ">
+
+                <div class="col-md-8 ">
                     <div class="d-flex justify-content-between mb-2 p-2 bg-body-secondary align-items-center">
                         <p class="m-0">1 to 100 0f 34753 tutors</p>
 
@@ -178,7 +183,8 @@
                                 </div>
                                 <div class="personal_detail">
                                     <h5>TutorName</h5>
-                                    <span>Female, 42 years <span style="background-color: red;" class=" text-light font-s px-1">Pro</span></span>
+                                    <span>Female, 42 years <span style="background-color: red;"
+                                            class=" text-light font-s px-1">Pro</span></span>
                                     <p class="m-0">15 years of teaching experience</p>
                                     <span class="d-flex align-items-center text-warning">
                                         <i class="fa fa-star"></i>
@@ -192,21 +198,28 @@
 
                                 <div class="qualification col-7">
                                     <p class="m-0 fs-6 text-secondary">
-                                      <span class="label-h font-s">Qualification</span>:
-                                         <span class="text-dark font-s fw-bold">Master in
-                                            Teaching</span></p>
+                                        <span class="label-h font-s">Qualification</span>:
+                                        <span class="text-dark font-s fw-bold">Master in
+                                            Teaching</span>
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
                                         <span class="label-h font-s">Location</span>:
-                                         <span class="text-dark font-s fw-bold">Amin town,
+                                        <span class="text-dark font-s fw-bold">Amin town,
                                             Askari plaza, 1st floor</span> <span class="text-danger font-s fw-light">8+
-                                            More</span></p>
+                                            More</span>
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
-                                        <span class="label-h font-s">Mobile</span>: <span class="text-dark font-s fw-bold">+92 318
-                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span
-                                            class="text-dark font-s"></p>
+                                        <span class="label-h font-s">Mobile</span>: <span
+                                            class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view
+                                            contact</span class="text-dark font-s">
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
-                                        <span class="label-h font-s">WhatsApp</span>: <span class="text-dark font-s fw-bold">+92 318
-                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span></p>
+                                        <span class="label-h font-s">WhatsApp</span>: <span
+                                            class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view
+                                            contact</span>
+                                    </p>
                                 </div>
 
                             </div>
@@ -214,15 +227,22 @@
                             <div class="row mt-3 ">
                                 <div class="col-12 d-flex m-1 align-items-center">
                                     <h5 class="label-h m-0 m-1 font-s1">Teaches </h5> :
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">Business</span>
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English as second
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">Business</span>
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English
+                                        as second
                                         language</span>
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English language</span>
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English
+                                        language</span>
                                     <span class="m-1 text-danger">+1 more</span>
                                 </div>
                                 <div class="col-12 d-flex m-1 align-items-center">
                                     <h5 class="label-h m-0 m-1 font-s1">Curriculum</h5>:
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">American Curriculum
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">American
+                                        Curriculum
                                         (AC)</span>
                                 </div>
                             </div>
@@ -259,7 +279,8 @@
 
                                 <div class="d-flex gap-3 align-items-center">
                                     <a class="text-success text-decoration-none" href="#">Request a callback</a>
-                                    <button class="bg_theme_green border border-0 text-light rounded p-2">Send Message</button>
+                                    <button class="bg_theme_green border border-0 text-light rounded p-2">Send
+                                        Message</button>
                                 </div>
                             </div>
 
@@ -285,7 +306,8 @@
                                 </div>
                                 <div class="personal_detail">
                                     <h5>TutorName</h5>
-                                    <span>Female, 42 years <span style="background-color: red;" class=" text-light font-s px-1">Pro</span></span>
+                                    <span>Female, 42 years <span style="background-color: red;"
+                                            class=" text-light font-s px-1">Pro</span></span>
                                     <p class="m-0">15 years of teaching experience</p>
                                     <span class="d-flex align-items-center text-warning">
                                         <i class="fa fa-star"></i>
@@ -299,21 +321,28 @@
 
                                 <div class="qualification col-7">
                                     <p class="m-0 fs-6 text-secondary">
-                                      <span class="label-h font-s">Qualification</span>:
-                                         <span class="text-dark font-s fw-bold">Master in
-                                            Teaching</span></p>
+                                        <span class="label-h font-s">Qualification</span>:
+                                        <span class="text-dark font-s fw-bold">Master in
+                                            Teaching</span>
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
                                         <span class="label-h font-s">Location</span>:
-                                         <span class="text-dark font-s fw-bold">Amin town,
+                                        <span class="text-dark font-s fw-bold">Amin town,
                                             Askari plaza, 1st floor</span> <span class="text-danger font-s fw-light">8+
-                                            More</span></p>
+                                            More</span>
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
-                                        <span class="label-h font-s">Mobile</span>: <span class="text-dark font-s fw-bold">+92 318
-                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span
-                                            class="text-dark font-s"></p>
+                                        <span class="label-h font-s">Mobile</span>: <span
+                                            class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view
+                                            contact</span class="text-dark font-s">
+                                    </p>
                                     <p class="m-0 fs-6 text-secondary">
-                                        <span class="label-h font-s">WhatsApp</span>: <span class="text-dark font-s fw-bold">+92 318
-                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view contact</span></p>
+                                        <span class="label-h font-s">WhatsApp</span>: <span
+                                            class="text-dark font-s fw-bold">+92 318
+                                            xxxxxxxxx</span> <span class="text-success font-s fw-bold">view
+                                            contact</span>
+                                    </p>
                                 </div>
 
                             </div>
@@ -321,15 +350,22 @@
                             <div class="row mt-3 ">
                                 <div class="col-12 d-flex m-1 align-items-center">
                                     <h5 class="label-h m-0 m-1 font-s1">Teaches </h5> :
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">Business</span>
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English as second
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">Business</span>
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English
+                                        as second
                                         language</span>
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English language</span>
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">English
+                                        language</span>
                                     <span class="m-1 text-danger">+1 more</span>
                                 </div>
                                 <div class="col-12 d-flex m-1 align-items-center">
                                     <h5 class="label-h m-0 m-1 font-s1">Curriculum</h5>:
-                                    <span class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">American Curriculum
+                                    <span
+                                        class="bg-body-secondary d-inline-block rounded font-s mx-1 p-1 bg_green_hover">American
+                                        Curriculum
                                         (AC)</span>
                                 </div>
                             </div>
@@ -366,7 +402,8 @@
 
                                 <div class="d-flex gap-3 align-items-center">
                                     <a class="text-success text-decoration-none" href="#">Request a callback</a>
-                                    <button class="bg_theme_green border border-0 text-light rounded p-2">Send Message</button>
+                                    <button class="bg_theme_green border border-0 text-light rounded p-2">Send
+                                        Message</button>
                                 </div>
                             </div>
 
@@ -374,15 +411,21 @@
                     </div>
 
                 </div><!-- col-8 end -->
-                <div class="col-3 m-auto my-0 border p-0">
-                    <div class="col bg-body-secondary p-2">
+
+
+                <!-- Filter -->
+                <div id="filter-col" class="d-none  col-md-3 d-md-block m-auto my-0 border p-0">
+                    <div class="col bg-body-secondary p-2 d-flex align-items-center justify-content-between">
                         <span><i class="fas fa-filter"></i> Filter</span>
+                        <span onclick="hideNShow('filter-col')" class="fs-1 text-secondary">&times;</span>
                     </div>
 
                     <div class="p-0 m-0 mx-2 px-2">
-                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-1')">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                            onclick="toggleList(this,'ul-toggle-1')">
                             Subject
-                            <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);"
+                                aria-hidden="true"></i>
                         </h5>
                         <ul style="height: 200px;" id="ul-toggle-1" class="border rounded filter_ul p-0">
                             <li>English</li>
@@ -405,7 +448,8 @@
                     </div>
 
                     <div class="p-0 m-0 mx-2 px-2">
-                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-2')">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                            onclick="toggleList(this,'ul-toggle-2')">
                             Curriculum
                             <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
                         </h5>
@@ -430,7 +474,8 @@
                     </div>
 
                     <div class="p-0 m-0 mx-2 px-2">
-                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-3')">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                            onclick="toggleList(this,'ul-toggle-3')">
                             Aria
                             <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
                         </h5>
@@ -455,7 +500,8 @@
                     </div>
 
                     <div class="p-0 m-0 mx-2 px-2">
-                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold" onclick="toggleList(this,'ul-toggle-4')">
+                        <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                            onclick="toggleList(this,'ul-toggle-4')">
                             Cagtegories
                             <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
                         </h5>
