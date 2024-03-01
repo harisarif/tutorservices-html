@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+:root {
+    --green: 66, 185, 121;
+    --white: 255, 255, 255;
+    --text: 68, 68, 68;
+}
 .main_header{
     text-align: center;
     padding: 15px 0;
@@ -45,7 +50,7 @@ width: 100%;
 }
 .signup_holder:hover{
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
-    border: 0.1rem solid var(--white);
+    border: 1px solid rgb(var(--green));
 }
 .signup_holder .icon_holder{
     width: 70px;
