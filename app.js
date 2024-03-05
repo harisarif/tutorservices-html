@@ -26,3 +26,17 @@ const hideNShow = (toggleItem) => {
     const vToggleItem = document.getElementById(toggleItem);
     vToggleItem.classList.toggle('mb_filter');
 }
+
+/* FAQ */
+
+const toggle = (para,arr) => {
+    const dropcontent = document.getElementById(para);
+    const arrow = document.getElementById(arr);
+        if (dropcontent.style.height !='auto') {
+            dropcontent.style.height = 'auto'; 
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            dropcontent.style.height = '0';
+            arrow.style.transform = 'rotate(0deg)';
+        }
+     }
