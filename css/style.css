@@ -346,6 +346,7 @@ header nav ul li a {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
     transition: all 0.5s;
     min-width: 300px;
+    width: 32%;
 }
 .box:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
