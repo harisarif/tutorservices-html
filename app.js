@@ -14,14 +14,6 @@ const toggleList = (heading, ToggleUl) => {
     };
 }
 
-const dropDown = (dropDownContent) =>{
-    var dropContent = document.getElementById(dropDownContent);
-    if (dropContent.style.height != 'auto') {
-        dropContent.style.height = 'auto'
-    } else {
-        dropContent.style.height = '0'
-    }
-}
 const hideNShow = (toggleItem) => {
     const vToggleItem = document.getElementById(toggleItem);
     vToggleItem.classList.toggle('mb_filter');

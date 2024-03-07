@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease;
 }
 
 main {
@@ -27,7 +28,35 @@ main {
     --white: 255, 255, 255;
     --text: 68, 68, 68;
 }
+.btn-an{
+    background-color: rgb(var(--green));
+}
+.btn-an:hover,
+.btn-an:focus {
+  /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+  transform: translateY(-0.25em); 
+  box-shadow: 0 3px 0 0 #ddd;
+}
+.btn-an:last-child{
+    margin-left: 5px;
+}
 
+/* .btn-an:hover{
+    background-image: linear-gradient(0deg, rgb(35, 141, 85) 100%,  rgb(var(--green)) 0%);
+} */
+.btn-an a,
+.btn-an:hover a{
+    color: rgb(var(--white));
+}
+
+.my-btn{
+    min-width: 100px;
+    border: 2px solid rgb(var(--white));
+    outline: 2px solid transparent;
+}
+.my-btn:hover{
+    outline: 2px solid rgb(var(--green));
+}
 .varified {
     width: 15px;
     height: 15px;
@@ -60,69 +89,6 @@ main {
     background-color: rgba(var(--green), 1);
 }
 
-.solid_btn {
-    font-size: 1.1rem;
-    color: rgb(var(--white));
-    background-color: rgb(var(--green));
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin: 10px 0;
-    border: 2px solid rgb(var(--white));
-}
-
-.regular_btn {
-    font-size: 1.1rem;
-    color: rgb(var(--text));
-    background-color: rgb(var(--white));
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin: 10px 0;
-    border: 2px solid rgb(var(--green));
-}
-
-.regular_btn:hover {
-    background-color: rgb(var(--green));
-    color: rgb(var(--white));
-    border: 2px solid transparent;
-}
-
-#dropdown_box {
-    position: relative;
-    z-index: 99;
-}
-
-.dropdown_ul {
-    position: absolute;
-    top: 35px;
-    left: -20px;
-    width: 150px;
-    z-index: 999;
-    height: 0;
-    overflow: hidden;
-    background-color: rgb(var(--white));
-}
-
-.dropdown_li {
-    border-bottom: 1px solid #eee;
-}
-
-.dropdown_li:last-child {
-    border-bottom: none;
-}
-
-.dropdown_li a:hover {
-    background-color: rgb(var(--green));
-    color: rgb(var(--white));
-}
-
-.dropdown_box:hover .dropdown_ul {
-    height: auto;
-}
-
-.dropdown_li {
-    display: block;
-}
-
 .description-tutor {
     background-color: #fafafa;
     line-height: 30px;
@@ -131,44 +97,6 @@ main {
 .modal-backdrop {
     display: none;
 }
-
-.bookmark {
-    color: gray;
-}
-
-header {
-    /* max-width: 1024px; */
-    background-color: red;
-}
-
-header {
-    background-color: #fff;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img {
-    width: 200px;
-    object-fit: contain;
-}
-
-header nav ul li:not(li a) {
-    display: inline-block;
-}
-
-header nav ul li a {
-    display: block;
-    color: rgb(var(--text));
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: .9rem;
-    border-radius: 2px;
-    text-transform: capitalize;
-}
-
 .bgImage {
     background-image: url(/images/banner_img.png);
     background-size: cover;
@@ -358,6 +286,10 @@ header nav ul li a {
 .option{
     height: 100%;
 }
+
+
+
+/* end form */
 /* End FAQ */
 @media (max-width: 768px) {
     .mb_filter {
@@ -377,6 +309,21 @@ header nav ul li a {
     .list_items{
         margin-left: 30px;
     }
+    .regular_btn{
+        border: none;
+        background-color: rgb(var(--green));
+    }
+    .solid_btn{
+        color: rgb(var(--text));
+        border: none;
+
+    }
+    header nav{
+        background-color: rgb(var(--green));
+    }
+    nav ul li:hover{
+        background-color: #fff;
+    }
 }
 @media (max-width:480px){
     .title-1{
@@ -385,4 +332,46 @@ header nav ul li a {
         text-align: center;
         padding: 10px 0px;
     }
+    .b-text{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .chk-box{
+        width: 100%;
+        justify-content: center;
+    }
 }
+
+/* Form style */
+.form{
+    box-shadow: 0 0 2px 1px #ddd;
+}
+.country{
+    width: 100%;
+    height: 57px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.checkBox_label{
+    display: flex;
+    align-items: center;
+}
+.checkBox_label::before{
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#agreeWithTerm:checked + .checkBox_label::before{
+    background-color: rgb(var(--green));
+    color: rgb(var(--white));
+    content: "\2714";
+    border: .1rem solid rgb(var(--green));
+}
+/* Form style end */
