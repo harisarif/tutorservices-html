@@ -31,4 +31,13 @@ const toggle = (para,arr) => {
             dropcontent.style.height = '0';
             arrow.style.transform = 'rotate(0deg)';
         }
-     }
+ }
+
+ window.addEventListener('load',()=>{
+    setTimeout(()=>{
+    const MODAL_BOX = document.getElementById('allModal');
+    MODAL_BOX.style.display = 'flex';
+    MODAL_BOX.children[0].classList.add('dropModal')
+// console.log(MODAL_BOX.children[0]);
+    },1000)
+ })
