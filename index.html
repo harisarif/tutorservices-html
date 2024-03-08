@@ -70,49 +70,48 @@
             <!-- header start -->
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" width="200px" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav align-items-md-center">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Country
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    More
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Hire</a>
-                            </li>
-                            <li class="nav-item btn-an text-center rounded w-1">
-                                <a class="nav-link solid_btn" href="login.html">Login</a>
-                            </li>
-                            <li class="nav-item btn-an text-center rounded w-1">
-                                <a class="nav-link solid_btn" href="sign-up.html">Sign Up</a>
-                            </li>
+                   <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" width="200px" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-md-center">
+                      <li class="nav-item dropdown m-1">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Country
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </div>
+                      </li>
+                      <li class="nav-item dropdown m-1">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          More
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./hire.html">Hire</a>
+                      </li>
+                      <li class="nav-item m-1 btn-an text-center rounded w-1">
+                        <a class="nav-link solid_btn" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item m-1 btn-an text-center rounded w-1">
+                        <a class="nav-link solid_btn" href="sign-up.html">Sign Up</a>
+                      </li>
+                    </ul> 
+                  </div>
                 </div>
             </nav>
             <!-- header end -->
@@ -407,116 +406,117 @@
 
 
                     <!-- Filter -->
-                    <div id="filter-col" class="d-none col col-lg-3 d-md-block my-0 border p-0">
-                        <div class="col bg-body-secondary p-2 d-flex align-items-center justify-content-between">
-                            <span><i class="fas fa-filter"></i> Filter</span>
-                            <span onclick="hideNShow('filter-col')" class="fs-1 text-secondary d-md-none">&times;</span>
-                        </div>
-
-                        <div class="p-0 m-0 mx-2 px-2">
-                            <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
-                                onclick="toggleList(this,'ul-toggle-1')">
-                                Subject
-                                <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);"
-                                    aria-hidden="true"></i>
-                            </h5>
-                            <ul style="height: 200px;" id="ul-toggle-1" class="border rounded filter_ul p-0">
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-0 m-0 mx-2 px-2">
-                            <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
-                                onclick="toggleList(this,'ul-toggle-2')">
-                                Curriculum
-                                <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);"
-                                    aria-hidden="true"></i>
-                            </h5>
-                            <ul style="height: 200px;" id="ul-toggle-2" class="border rounded filter_ul p-0">
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-0 m-0 mx-2 px-2">
-                            <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
-                                onclick="toggleList(this,'ul-toggle-3')">
-                                Aria
-                                <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
-                            </h5>
-                            <ul id="ul-toggle-3" class="rounded filter_ul p-0">
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-0 m-0 mx-2 px-2">
-                            <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
-                                onclick="toggleList(this,'ul-toggle-4')">
-                                Cagtegories
-                                <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
-                            </h5>
-                            <ul id="ul-toggle-4" class="rounded filter_ul p-0">
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                                <li>English</li>
-                            </ul>
+                    <div id="filter-col" class="d-none col col-lg-3 d-md-block my-0 p-0">
+                        <div class="filter-1 border ">
+                            <div class="col bg-body-secondary p-2 d-flex align-items-center justify-content-between">
+                                <span><i class="fas fa-filter"></i> Filter</span>
+                                <span onclick="hideNShow('filter-col')" class="fs-1 text-secondary d-md-none">&times;</span>
+                            </div>
+    
+                            <div class="p-0 m-0 mx-2 px-2">
+                                <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                                    onclick="toggleList(this,'ul-toggle-1')">
+                                    Subject
+                                    <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);"
+                                        aria-hidden="true"></i>
+                                </h5>
+                                <ul style="height: 200px;" id="ul-toggle-1" class="border rounded filter_ul p-0">
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+    
+                            <div class="p-0 m-0 mx-2 px-2">
+                                <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                                    onclick="toggleList(this,'ul-toggle-2')">
+                                    Curriculum
+                                    <i class="fa fa-chevron-down text-secondary" style="transform: rotate(180deg);" aria-hidden="true"></i>
+                                </h5>
+                                <ul style="height: 200px;" id="ul-toggle-2" class="border rounded filter_ul p-0">
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+    
+                            <div class="p-0 m-0 mx-2 px-2">
+                                <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                                    onclick="toggleList(this,'ul-toggle-3')">
+                                    Aria
+                                    <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                                </h5>
+                                <ul id="ul-toggle-3" class="rounded filter_ul p-0">
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+    
+                            <div class="p-0 m-0 mx-2 px-2">
+                                <h5 class="m-0 mt-2 pointer d-flex align-items-center justify-content-between font-s fw-bold"
+                                    onclick="toggleList(this,'ul-toggle-4')">
+                                    Cagtegories
+                                    <i class="fa fa-chevron-down text-secondary" aria-hidden="true"></i>
+                                </h5>
+                                <ul id="ul-toggle-4" class="rounded filter_ul p-0">
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -603,6 +603,84 @@
 
                     </div>
                     <!-- End FQA Section -->
+
+                    <!-- carousel start -->
+                    <div class="col-12">
+                        <h1 class="text-center py-5">Reviews and Ratings</h1>
+                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class=" carousel-inner" >
+                            <div class="carousel-item text-center py-5 active  ">
+                        
+                                    <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px"   alt="... ">
+                                    <div>
+                                        <h3>Frank Burke</h3>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <p>All Areas</p>
+                                    </div>
+                        
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                            <div class="carousel-item text-center py-5" >
+                    
+                                <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px"   alt="... ">
+                                <div >
+                                    <h3>Frank Burke</h3>
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p>All Areas</p>
+                                </div>
+                    
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                            <div class="carousel-item text-center py-5">
+                    
+                                    <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px"   alt="... ">
+                                    <div>
+                                        <h3>Frank Burke</h3>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <p>All Areas</p>
+                                    </div>
+                            
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
             </section>
 
 
@@ -636,31 +714,6 @@
                     </div>
                 </div>
              </div>
-
-
-            <!-- Button trigger modal -->
-            <!-- <button type="button" id="modal-1" class="d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            </button> -->
-
-            <!-- Modal -->
-            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Are you tutor or student</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn bg-body-secondary" data-bs-dismiss="modal">Student</button>
-                            <button type="button" class="btn btn-success border-0 bg_theme_green  text-light">Tutor</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
         </main>
     </div>
