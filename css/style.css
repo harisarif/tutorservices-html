@@ -24,7 +24,7 @@ main {
     background-color: rgba(var(--green), 1);
 } */
 
-.modalBox{
+.modalBox {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -35,37 +35,40 @@ main {
     display: none;
     align-items: center;
     flex-direction: column;
-    transition: all 4s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.boxModal-1{
-    transition: 5s ease;
-}
-.dropModal{
+
+.dropModal {
     transform: translateY(100px);
-    
 }
+
 .btn.btn-success:hover {
     /* Set hover effect to none */
     background-color: rgb(var(--green)) !important;
     color: rgb(var(--white)) !important;
     border: transparent !important;
     box-shadow: none !important;
-  }
+}
+
 :root {
     --green: 66, 185, 121;
     --white: 255, 255, 255;
     --text: 68, 68, 68;
 }
-.btn-an{
+
+.btn-an {
     background-color: rgb(var(--green));
 }
+
 .btn-an:hover,
 .btn-an:focus {
-  /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
-  transform: translateY(-0.25em); 
-  box-shadow: 0 3px 0 0 #ddd;
+    /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+    transform: translateY(-0.25em);
+    box-shadow: 0 3px 0 0 #ddd;
 }
-.btn-an:last-child{
+
+.btn-an:last-child {
     margin-left: 5px;
 }
 
@@ -73,18 +76,20 @@ main {
     background-image: linear-gradient(0deg, rgb(35, 141, 85) 100%,  rgb(var(--green)) 0%);
 } */
 .btn-an a,
-.btn-an:hover a{
+.btn-an:hover a {
     color: rgb(var(--white));
 }
 
-.my-btn{
+.my-btn {
     min-width: 100px;
     border: 2px solid rgb(var(--white));
     outline: 2px solid transparent;
 }
-.my-btn:hover{
+
+.my-btn:hover {
     outline: 2px solid rgb(var(--green));
 }
+
 .varified {
     width: 15px;
     height: 15px;
@@ -97,9 +102,11 @@ main {
     width: 100%;
     height: 100%;
 }
-.w-1{
+
+.w-1 {
     min-width: 100px;
 }
+
 .img-1 {
     width: 100px;
     height: 100px;
@@ -118,9 +125,11 @@ main {
 .bg_theme_green {
     background-color: rgba(var(--green), 1);
 }
-.theme_text_green{
+
+.theme_text_green {
     color: rgba(var(--green), 1);
 }
+
 .description-tutor {
     background-color: #fafafa;
     line-height: 30px;
@@ -129,6 +138,7 @@ main {
 .modal-backdrop {
     display: none;
 }
+
 .bgImage {
     background-image: url(/images/banner_img.png);
     background-size: cover;
@@ -293,7 +303,7 @@ main {
 
 /* FAQ */
 
-.text{
+.text {
     font-size: 14px;
     color: #757575;
 }
@@ -308,52 +318,67 @@ main {
     min-width: 300px;
     width: 32%;
 }
-.box:hover{
+
+.box:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
 }
-#para,#para1,#para2,#para3,#para4,#para5{
+
+#para,
+#para1,
+#para2,
+#para3,
+#para4,
+#para5 {
     height: 0;
     overflow: hidden;
 }
-.option{
+
+.option {
     height: 100%;
 }
 
 /* hire-page */
-.main-page{ 
+.main-page {
     border-radius: 10px;
     box-shadow: 0 0 3px 2px #ddd;
 }
-.list-group{
+
+.list-group {
     visibility: hidden;
 }
-.loading{
+
+.loading {
     height: 8px;
     width: 540px;
     border-radius: 30px;
     overflow: hidden;
 }
-.percentage{
+
+.percentage {
     width: 105px;
     height: 100%;
     border-radius: 30px;
 }
-.page-1{
-   min-height: 300px;
+
+.page-1 {
+    min-height: 300px;
 }
-.list-1{
+
+.list-1 {
     width: 500px;
     height: 55px;
     border: 1px solid rgb(192, 188, 188);
     border-radius: 8px;
 }
-.list-1::after{
+
+.list-1::after {
     display: block;
     content: '';
     width: 20px;
     height: 20px;
     background-color: #ddd;
 }
+
 /* hire-page end */
 /* end form */
 /* End FAQ */
@@ -368,48 +393,67 @@ main {
         z-index: 9999;
         display: block !important;
     }
-    .list_block{
-    
+
+    .list_block {
+
         margin-left: 20px;
     }
-    .list_items{
+
+    .list_items {
         margin-left: 30px;
     }
 }
-@media (max-width:480px){
-    .title-1{
+
+@media (max-width:480px) {
+    .title-1 {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 10px 0px;
     }
-    .b-text{
+
+    .b-text {
         font-size: small;
         display: flex;
         flex-direction: column;
-       
+
     }
-    .chk-box{
+
+    .chk-box {
         width: 100%;
         justify-content: center;
     }
 }
-
+/* footer */
+footer ul{
+    margin: 0;
+    padding: 0 !important;
+}
+@media (max-width: 575px){
+    .footer-ul{
+      height: 0;
+      overflow: hidden;
+    }
+  }
+/* footer end */
 /* Form style */
-.form{
+.form {
     box-shadow: 0 0 2px 1px #ddd;
 }
-.country{
+
+.country {
     width: 100%;
     height: 57px;
     border: 1px solid gainsboro;
     border-radius: 5px;
 }
-.checkBox_label{
+
+.checkBox_label {
     display: flex;
     align-items: center;
 }
-.checkBox_label::before{
+
+.checkBox_label::before {
     content: '';
     display: inline-block;
     width: 1.2rem;
@@ -419,10 +463,12 @@ main {
     justify-content: center;
     align-items: center;
 }
-#agreeWithTerm:checked + .checkBox_label::before{
+
+#agreeWithTerm:checked+.checkBox_label::before {
     background-color: rgb(var(--green));
     color: rgb(var(--white));
     content: "\2714";
     border: .1rem solid rgb(var(--green));
 }
+
 /* Form style end */

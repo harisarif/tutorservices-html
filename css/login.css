@@ -279,3 +279,14 @@ input[type="radio"] {
         height: 40px;
     }
 }
+/* footer */
+footer ul{
+    margin: 0;
+    padding: 0 !important;
+}
+@media (max-width: 575px){
+    .footer-ul{
+      height: 0;
+      overflow: hidden;
+    }
+  }

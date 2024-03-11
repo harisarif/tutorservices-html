@@ -151,48 +151,9 @@ width: 100%;
 .tutor_work ul li a:hover{
     text-decoration: none;
 }
-footer{
-    background-color: rgb(255, 252, 252);
-    padding: 40px 0;
-}
-.details{
-    border-bottom: 3px solid whitesmoke;
-}
-.tutor_details{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.tutor_details_card h3{
-   color: #555;
-   font-weight: 600;
-   font-size: 18px;
-   margin-bottom: 25px;
-}
-.tutor_details_card ul li{
-    display: block;
-    padding: 10px 0;
-}
-.tutor_details_card ul li a{
-    text-decoration: none;
-    color: #555;
-
-}
-.social_wrapper{
-    margin: 30px 0;
-}
-.social_wrapper ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social_wrapper ul li{
-    display: inline;
-    margin: 0 5px;
-}
-.social_wrapper ul li a{
-    color: #555;
-    text-decoration: none;
+footer ul{
+    margin: 0;
+    padding: 0 !important;
 }
 @media(max-width:1150px){
     .signup_holder h4{
@@ -245,3 +206,11 @@ footer{
         width: 35%;
     }
 }
+/* footer */
+@media (max-width: 575px){
+    .footer-ul{
+      height: 0;
+      overflow: hidden;
+    }
+  }
+/* footer end */

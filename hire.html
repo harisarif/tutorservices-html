@@ -14,7 +14,29 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
     <style>
- 
+        .choice {
+            height: 250px;
+            overflow-y: scroll;
+
+        }
+
+        .choice ul li:nth-child(even) {
+            background-color: #eee;
+        }
+        .choice ul li label::before{
+            display: inline-block;
+            content: '';
+            min-width: 0.9rem;
+            min-height: 0.9rem;
+            /* background-color: rgb(var(--green)); */
+            border: 2px solid #fff;
+            outline: 1px solid #777;
+            margin: 0 0.9rem;
+            border-radius: 50%;
+        }
+        .chose-subject:checked + label::before{
+            background-color: rgb(var(--green));
+        }
     </style>
 </head>
 
@@ -25,13 +47,13 @@
         </header>
         <div class="row m-0">
             <div class="main-page col-6 mx-auto my-3 p-0 text-center ">
-                <div class="col m-1 py-3 text-center flex-column rounded-top bg-body-secondary d-none ">
+                <!-- <div class="col m-1 py-3 text-center flex-column rounded-top bg-body-secondary">
                     <h3>Post Learning Requirement - It's Free!</h3>
                     <p>Post your learning requirement and let interested tutors contact you</p>
                     <span><i> If you are a tutor </i><a href="#" class="theme_text_green text-decoration-none">
                             <b>Click here</b></a></span>
 
-                </div>
+                </div> -->
                 <div class="col-12 d-flex justify-content-center py-3 border-bottom">
                     <b class="theme_text_green px-2">20%</b>
                     <div class="loading bg-body-secondary my-2">
@@ -41,7 +63,7 @@
                     </div>
                 </div>
                 <div class="page-1">
-                    <div class="col-12 px-5 py-4 d-none">
+                    <!-- <div class="col-12 px-5 py-4">
                         <h3>Select a Subject</h3>
                         <p>( Which subject tutor are you looking for? )</p>
                         <div class="form-group">
@@ -54,8 +76,8 @@
                             <li class="list-group-item">Grapes</li>
                             <li class="list-group-item">Pineapple</li>
                         </ul>
-                    </div>
-                    <div class="col-12  py-4">
+                    </div> -->
+                    <!-- <div class="col-12  py-4">
                         <h3>Select City and Area</h3>
                         <select class="list-1 px-2 mt-3">
                             <option value="pakistan">pakistan</option>
@@ -79,9 +101,65 @@
                             <option value="pakistan">pakistan</option>
                             <option value="pakistan">pakistan</option>
                         </select>
+                    </div> -->
+                    <div class="col d-none">
+                        <h3 class="text-center py-3">What are you looking for?</h3>
+                        <div class="choice col-12 overflow-y">
+
+                            <ul class="p-0">
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-1">
+                                    <label for="option-1">Subject-1</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-2">
+                                    <label for="option-2">Subject-2</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-3">
+                                    <label for="option-3">Subject-3</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-4">
+                                    <label for="option-4">Subject-4</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-5">
+                                    <label for="option-5">Subject-5</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-6">
+                                    <label for="option-6">Subject-6</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-7">
+                                    <label for="option-7">Subject-7</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-8">
+                                    <label for="option-8">Subject-8</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-9">
+                                    <label for="option-9">Subject-9</label>
+                                </li>
+                                <li class="d-flex align-items-center fs-5 py-2">
+                                    <input class="m-2 d-none chose-subject" type="radio" name="subjects" id="option-10"><label
+                                        for="option-10">Subject-10</lab el>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-center py-3">Introduce yourself and tell what you want to learn <i class="fs-6 text-secondary">(Optional)</i></h4>
+                        <div class="col-12 px-5">
+                            <textarea name="" id=""  rows="10" class="col-12 border rounded" style="resize: none;"></textarea>
+                            <i class="text-secondary">0/150 Words</i>
+                        </div>
+                        
                     </div>
                 </div>
-                
+
                 <div class="col-12 my-5">
                     <button class="border-0 bg_theme_green text-light fs-4 py-1 px-4 rounded">Next</button>
                 </div>

@@ -20,6 +20,7 @@ const hideNShow = (toggleItem) => {
 }
 
 /* FAQ */
+// footer//
 
 const toggle = (para,arr) => {
     const dropcontent = document.getElementById(para);
@@ -38,6 +39,5 @@ const toggle = (para,arr) => {
     const MODAL_BOX = document.getElementById('allModal');
     MODAL_BOX.style.display = 'flex';
     MODAL_BOX.children[0].classList.add('dropModal')
-// console.log(MODAL_BOX.children[0]);
     },1000)
  })
