@@ -343,8 +343,9 @@ main {
     box-shadow: 0 0 3px 2px #ddd;
 }
 
-.list-group {
-    visibility: hidden;
+.list-group li{
+    display: none;
+    cursor: pointer;
 }
 
 .loading {
@@ -355,7 +356,7 @@ main {
 }
 
 .percentage {
-    width: 105px;
+    width: 20%;
     height: 100%;
     border-radius: 30px;
 }
@@ -365,10 +366,10 @@ main {
 }
 
 .list-1 {
-    width: 500px;
+    width: 86%;
     height: 55px;
     border: 1px solid rgb(192, 188, 188);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .list-1::after {
@@ -378,10 +379,48 @@ main {
     height: 20px;
     background-color: #ddd;
 }
+.choice {
+    height: 250px;
+    overflow-y: scroll;
 
+}
+
+.choice ul li:nth-child(even) {
+    background-color: #eee;
+}
+
+.choice ul li label::before {
+    display: inline-block;
+    content: '';
+    min-width: 0.9rem;
+    min-height: 0.9rem;
+    /* background-color: rgb(var(--green)); */
+    border: 2px solid #fff;
+    outline: 1px solid #777;
+    margin: 0 0.9rem;
+    border-radius: 50%;
+}
+
+.chose-subject:checked+label::before {
+    background-color: rgb(var(--green));
+}
+
+.inp-1 {
+    width: 86%;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 11px 8px;
+    margin: 7px 0px;
+    border: 1px solid rgb(201, 197, 197);
+}
 /* hire-page end */
 /* end form */
 /* End FAQ */
+
+.car_item{
+    width: 700px;
+}
+
 @media (max-width: 768px) {
     .mb_filter {
         position: fixed;

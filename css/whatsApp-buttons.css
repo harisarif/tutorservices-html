@@ -49,7 +49,7 @@
     margin:0;
 }
 
-.WhatsApp_Msg_Aria {
+.WhatsApp_Msg_Area {
     background-color: #fff;
     background-image: url(https://taxiteam.be/images/whatsapp/bg.jpg);
     background-size: cover;
@@ -84,7 +84,7 @@
     transform: rotate(45deg);
 }
 
-.WhatsApp_Msg_Aria .startChat_wrapper {
+.WhatsApp_Msg_Area .startChat_wrapper {
     width: 100%;
     background: #fff;
     height: 60px;
@@ -92,7 +92,7 @@
     align-items: center;
 }
 
-.WhatsApp_Msg_Aria .startChat_wrapper .start_chat {
+.WhatsApp_Msg_Area .startChat_wrapper .start_chat {
 
     border-radius: 25px;
     font-size: 1.1rem;
@@ -154,7 +154,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .WhatsApp_Msg_Aria .startChat_wrapper .start_chat {
+    .WhatsApp_Msg_Area .startChat_wrapper .start_chat {
         height:35px;
         width:90%;
         font-size:18px;
