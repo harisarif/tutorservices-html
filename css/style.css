@@ -411,10 +411,26 @@ main {
 /* hire-page end */
 /* end form */
 /* End FAQ */
-
-.car_item{
-    width: 700px;
+.main-card{
+    width: 1150px;
+    height: 400px;
+    display: flex;
+    background: white;
 }
+.card-item{
+    width: 800px;
+    align-items: center;
+    text-align: center;
+}
+
+/* sign up for tutor */
+button[type="submit"]:hover{
+    background-color: rgba(var(--green), 1) !important;
+  }
+
+  button[type="submit"]:active{
+    background-color: rgba(var(--green), .8) !important;
+  }
 
 @media (max-width: 768px) {
     .mb_filter {

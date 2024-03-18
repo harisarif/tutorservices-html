@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html><meta name="theme-color" content="#42b979" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png" />
 <html lang="en">
 
 <head>
   <title>Edexcel Academy</title>
   <meta charset="UTF-8" />
-  <meta name="theme-color" content="#42b979" />
-  <link rel="shortcut icon" href="favicon.png" type="image/png" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -78,21 +78,7 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav align-items-md-center">
-              <li class="nav-item dropdown m-1">
-                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Country
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
+             
               <li class="nav-item dropdown m-1">
                 <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -109,7 +95,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./hire_tutor.html">Hire</a>
+                <a class="nav-link active" aria-current="page" href="./hire_tutor.html">Hire Tutor</a>
               </li>
               <li class="nav-item m-1 btn-an text-center rounded w-1">
                 <a class="nav-link solid_btn" href="login.html">Login</a>
@@ -181,8 +167,24 @@
         <div class="row justify-content-center px-0">
           <div class="col-md-9">
             <div class="d-flex justify-content-between mb-2 p-2 bg-body-secondary align-items-center">
-              <p class="m-0">1 to 100 0f 34753 tutors</p>
-
+              <div class="d-flex align-item-center">
+                <p class="m-0 pt-1">1 to 100 0f 34753 tutors</p>
+                <li class="nav-item dropdown m-1 d-block px-3">
+                  <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Country
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
               <div class="text-dark">
                 show
                 <select>
@@ -620,7 +622,7 @@
         <!-- End FQA Section -->
 
         <!-- carousel start -->
-        <div class="p-0">
+        <!-- <div class="p-0">
           <div class="col-12">
             <h2 class="py-0 my-4 text-center text-capitalize fs-2 fw-bold">
               Reviews and Ratings
@@ -636,7 +638,7 @@
                 aria-label="Slide 3"></button>
             </div>
             <div class="carousel-innerc d-flex justify-content-center">
-              <div class="carousel-item text-center py-3 mx-1 active bg-body-secondary shadow rounded car_item">
+              <div class="carousel-item text-center py-3 mx-2 active bg-body-secondary shadow rounded car_item">
                 <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px" alt="... " />
                 <div>
                   <h3>Frank Burke</h3>
@@ -655,7 +657,7 @@
                   Some representative placeholder content for the first slide.
                 </p>
               </div>
-              <div class="carousel-item text-center py-3 mx-1 bg-body-secondary shadow rounded car_item">
+              <div class="carousel-item text-center py-3 mx-2 bg-body-secondary shadow rounded car_item">
                 <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px" alt="... " />
                 <div>
                   <h3>Frank Burke</h3>
@@ -675,7 +677,7 @@
                   slide.
                 </p>
               </div>
-              <div class="carousel-item text-center py-3 mx-1 bg-body-secondary shadow rounded car_item">
+              <div class="carousel-item text-center py-3 mx-2 bg-body-secondary shadow rounded car_item">
                 <img src="images/profile_dp.png" class="my-3 rounded-circle" width="100px" height="100px" alt="... " />
                 <div>
                   <h3>Frank Burke</h3>
@@ -706,8 +708,99 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
+        </div> -->
         <!-- carousel end -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner py-3">
+            <div class="carousel-item active">
+              <div class="main-card d-flex justify-content-center">
+                <div class="card-item bg-body-secondary py-3 mx-2  shadow rounded">
+                  <img src="images/profile_dp.png" class="my-3 rounded-circle " width="100px" height="100px" alt="... " />
+                <div>
+                  <h3>Frank Burke</h3>
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <p>All Areas</p>
+                </div>
+
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="main-card d-flex justify-content-center">
+                <div class="card-item bg-body-secondary py-3 mx-2  shadow rounded">
+                  <img src="images/profile_dp.png" class="my-3 rounded-circle " width="100px" height="100px" alt="... " />
+                <div>
+                  <h3>Frank Burke</h3>
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <p>All Areas</p>
+                </div>
+
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="main-card d-flex justify-content-center ">
+                <div class="card-item bg-body-secondary py-3 mx-2  shadow rounded">
+                  <img src="images/profile_dp.png" class="my-3 rounded-circle " width="100px" height="100px" alt="... " />
+                <div>
+                  <h3>Frank Burke</h3>
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <p>All Areas</p>
+                </div>
+
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
       <!-- footer start... -->
 
@@ -1004,8 +1097,9 @@
 
           <hr />
           <div class="d-flex justify-content-end gap-2">
-            <a href="#student" onclick="document.getElementById('allModal').style.display = 'none'" class="btn bg-body-secondary">Student</a>
-            <a href="./sign_up_for_tutor.html" class="btn btn-success bg_theme_green border-0">Tutor</a>
+            <a href="#student" onclick="document.getElementById('allModal').style.display = 'none'"
+              class="btn bg-body-secondary">Student</a>
+            <a href="./sign-up-for-tutor.html" class="btn btn-success bg_theme_green border-0">Tutor</a>
           </div>
         </div>
       </div>
