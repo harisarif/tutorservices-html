@@ -79,24 +79,9 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav align-items-md-center">
              
-              <li class="nav-item dropdown m-1">
-                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./hire_tutor.html">Hire Tutor</a>
-              </li>
+              
+              <!-- <li class="nav-item">
+              </li> -->
               <li class="nav-item m-1 btn-an text-center rounded w-1">
                 <a class="nav-link solid_btn" href="login.html">Login</a>
               </li>
@@ -114,15 +99,14 @@
         <div class="col-12 col-md-6 intro_lines mx-0">
           <h1><span>Edexcel</span> Academy & Consultent.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            quis delectus voluptatibus optio at et sequi fugiat, nulla
-            officiis rerum.
+            Edexcel Academy is more than just a school; it's a vibrant community where students, parents, teachers, and staff come together in a spirit of collaboration and mutual respect. We encourage active involvement in extracurricular activities
           </p>
           <button class="p-2 bg_theme_green my-btn rounded text-light">
             Student
           </button>
           <button class="p-2 bg_theme_green my-btn rounded text-light">
-            Tutor
+            <a class="nav-link active" aria-current="page" href="./hire_tutor.html">Hire Tutor</a>
+            
           </button>
         </div>
         <div class="col-12 col-md-6 p-0">
@@ -173,6 +157,21 @@
                   <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Country
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown m-1 d-block px-3">
+                  <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -531,9 +530,13 @@
                   <li>English</li>
                 </ul>
               </div>
+
             </div>
-          </div>
+            <video src="images/edexcel.mp4" class="object-fit-cover m-5 " autoplay muted loop width="250px" height="300px"></video>
+
+         </div>
         </div>
+
         <!-- FQA Section -->
         <div class="p-0">
           <div class="col-12">
@@ -711,7 +714,7 @@
         </div> -->
         <!-- carousel end -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+          <div class="carousel-indicators mx-5">
             <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="1"
@@ -719,10 +722,10 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" style="filter: invert(1);" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner py-3">
+          <div class="carousel-inner px-5 mx-2 d-flex ">
             <div class="carousel-item active">
               <div class="main-card d-flex justify-content-center">
-                <div class="card-item bg-body-secondary py-3 mx-2  shadow rounded">
+                <div class="card-item bg-body-secondary py-3 ms-3  shadow rounded">
                   <img src="images/profile_dp.png" class="my-3 rounded-circle " width="100px" height="100px" alt="... " />
                 <div>
                   <h3>Frank Burke</h3>
@@ -790,7 +793,7 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -804,8 +807,8 @@
       </section>
       <!-- footer start... -->
 
-      <footer class="row my-4 text-center text-lg-start justify-content-center">
-        <div onclick="toggle('footer-ul-1', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
+      <footer class="row ms-3 mt-2 px-5 text-center text-lg-start justify-content-center">
+        <!-- <div onclick="toggle('footer-ul-1', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
           <h5 class="text-secondary py-2">Tutors by City</h5>
           <ul class="footer-ul d-sm-block" id="footer-ul-1">
             <li class="d-block d-inline py-1">
@@ -830,9 +833,9 @@
               <a class="text-decoration-none text-secondary" href="#">Umm Al Quwain</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div onclick="toggle('footer-ul-2', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <!-- <div onclick="toggle('footer-ul-2', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
           <h5 class="text-secondary py-2">Tutors by City</h5>
           <ul class="footer-ul d-sm-block" id="footer-ul-2">
             <li class="d-block d-inline py-1">
@@ -857,9 +860,9 @@
               <a class="text-decoration-none text-secondary" href="#">Umm Al Quwain</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div onclick="toggle('footer-ul-3', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <!-- <div onclick="toggle('footer-ul-3', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
           <h5 class="text-secondary py-2">Tutors by City</h5>
           <ul class="footer-ul d-sm-block" id="footer-ul-3">
             <li class="d-block d-inline py-1">
@@ -911,9 +914,9 @@
               <a class="text-decoration-none text-secondary" href="#">Umm Al Quwain</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div onclick="toggle('footer-ul-5', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <!-- <div onclick="toggle('footer-ul-5', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
           <h5 class="text-secondary py-2">Tutors by City</h5>
           <ul class="footer-ul d-sm-block" id="footer-ul-5">
             <li class="d-block d-inline py-1">
@@ -938,9 +941,9 @@
               <a class="text-decoration-none text-secondary" href="#">Umm Al Quwain</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div onclick="toggle('footer-ul-6', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <!-- <div onclick="toggle('footer-ul-6', '')" class="col-12 col-sm-6 col-md-3 col-lg-2">
           <h5 class="text-secondary py-2">Tutors by City</h5>
           <ul class="footer-ul d-sm-block" id="footer-ul-6">
             <li class="d-block d-inline py-1">
@@ -965,7 +968,7 @@
               <a class="text-decoration-none text-secondary" href="#">Umm Al Quwain</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="col-12">
           <ul class="text-center p-2">
@@ -990,6 +993,15 @@
               <a class="text-decoration-none text-secondary" href="#">USA,</a>
             </li>
             <li class="d-inline">
+              <a class="text-decoration-none text-secondary" href="#">UAE,</a>
+            </li>
+            <li class="d-inline">
+              <a class="text-decoration-none text-secondary" href="#">UK,</a>
+            </li>
+            <li class="d-inline">
+              <a class="text-decoration-none text-secondary" href="#">ASIA</a>
+            </li>
+            <!-- <li class="d-inline">
               <a class="text-decoration-none text-secondary" href="#">USA,</a>
             </li>
             <li class="d-inline">
@@ -1027,16 +1039,7 @@
             </li>
             <li class="d-inline">
               <a class="text-decoration-none text-secondary" href="#">USA,</a>
-            </li>
-            <li class="d-inline">
-              <a class="text-decoration-none text-secondary" href="#">USA,</a>
-            </li>
-            <li class="d-inline">
-              <a class="text-decoration-none text-secondary" href="#">USA,</a>
-            </li>
-            <li class="d-inline">
-              <a class="text-decoration-none text-secondary" href="#">USA,</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="col-12">
@@ -1057,7 +1060,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 d-flex">
+        <!-- <div class="col-12 d-flex">
           <h6 class="fw-bold">Disclaimer:</h6>
           <p class="px-2 text-start">
             Students can find the best tutors and instructors through
@@ -1068,7 +1071,7 @@
             learn more about verifying the identity of other users in our
             Safety Center.
           </p>
-        </div>
+        </div> -->
       </footer>
 
       <!-- footer end.. -->

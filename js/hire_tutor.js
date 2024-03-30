@@ -40,7 +40,7 @@ const NextStep = (button) => {
             console.log(persentage);
             persentage = persentage + 25;
             if (stepCounter == 4) {
-                button.type = 'button'
+                button.type = 'submit'
                 button.value = 'Submit'
                 console.log(stepCounter);
             }
@@ -66,7 +66,7 @@ const backStep = (button) => {
         persentage_num.innerHTML = (persentage) + '%';
         // persentage = persentage + 25;
         nextBtn.type = "button"
-        nextBtn.innerHTML = 'Next'
+        nextBtn.value = 'Next'
     }
 }
 
