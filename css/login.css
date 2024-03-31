@@ -139,7 +139,7 @@ input[type="radio"] {
 
 .signin-click {
     height: 50px;
-    background: rgb(25, 129, 25);
+    background-color:#42b979;
     border-radius: 5px;
     border: none;
     margin-top: 30px;
@@ -147,8 +147,12 @@ input[type="radio"] {
 
 .data a {
     text-decoration: none;
-    color: rgb(25, 129, 25);
+    color:#42b979;
     cursor: pointer;
+}
+.bg-success{
+    background-color:#42b979 !important ;
+    rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .signup-click {
@@ -198,6 +202,44 @@ input[type="radio"] {
 
 .tutor_work ul li a:hover {
     text-decoration: none;
+} 
+/*  footer */
+
+footer{
+    width:100%;
+}
+footer ul{
+    margin: 0;
+    padding: 0 !important;
+}
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+ul.social-network li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color:#42b979;
+    
+    color:#fff;
+}
+.footer-bottom{
+    background-color:#42b979;
+
+    color:#fff;
 }
 
 @media(max-width:800px) {

@@ -41,3 +41,17 @@ window.addEventListener('load', () => {
         MODAL_BOX.children[0].classList.add('dropModal')
     }, 1000)
 })
+
+const goToTop = document.getElementsByClassName('goToTop')[0];
+
+
+window.addEventListener('scroll', () => {
+    // console.log(window.scrollY);
+    if (window.scrollY > 200) {
+        // header.classList.add('stiky_header');
+        goToTop.style.display = 'block';
+    } else {
+        // header.classList.remove('stiky_header');
+        goToTop.style.display = 'none';
+    }
+})
