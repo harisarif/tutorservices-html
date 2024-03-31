@@ -441,7 +441,7 @@ button[type="submit"]:hover{
 .goToTop{
     color:white;
     position: fixed;
-    bottom: 220px;
+    bottom: 120px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -454,7 +454,7 @@ button[type="submit"]:hover{
     align-items: center;
     cursor: pointer;
     box-shadow: 0 2px 4px 0 #ddd;
-    /* display: none; */
+    display: none;
 }
 /* footer */
 footer{
