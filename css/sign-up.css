@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 :root {
-    --green: 66, 185, 121;
+    --green: 66 ,185 ,121;
     --white: 255, 255, 255;
     --text: 68, 68, 68;
 }
@@ -15,6 +15,14 @@
     box-shadow: 0 0.1rem 0.1rem 0 rgba(64, 64, 64, 0.08);
 
 }
+.nav-link {
+    color:#42b979;
+ }
+ .nav-link:hover{
+     color:#42b979;
+     text-decoration: underline;
+     
+ }
 
 .inner{
     padding: 40px 0;
@@ -89,8 +97,8 @@ width: 100%;
 }
 .signup_typ{
     text-decoration: none;
-    border: 1px solid green;
-    color: green;
+    border: 1px solid rgb(var(--green));
+    color: rgb(var(--green));
     border-radius: 2px;
     font-weight: 400;
     font-size: 16px;
@@ -102,7 +110,7 @@ width: 100%;
     max-width: 100%;
 }
 .signup_holder:hover a.signup_typ{
-    background-color: green;
+    background-color: rgb(var(--green));
     color: #fff;
 }
 .signup_holder .para{
@@ -117,7 +125,7 @@ width: 100%;
     font-size: 16px;
 }
 .login_typ span{
-    color: green;
+    color: rgb(var(--green));
     font-weight: bold;
     margin-left: 1px;
 }
@@ -153,10 +161,7 @@ width: 100%;
 .tutor_work ul li a:hover{
     text-decoration: none;
 }
-footer ul{
-    margin: 0;
-    padding: 0 !important;
-}
+
 
 /* footer */
 footer{
