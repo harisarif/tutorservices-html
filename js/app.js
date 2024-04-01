@@ -55,3 +55,7 @@ window.addEventListener('scroll', () => {
         goToTop.style.display = 'none';
     }
 })
+
+window.addEventListener('load', ()=>{
+    document.getElementById('lazzyLoader').style.display = 'none';
+})
