@@ -39,7 +39,10 @@ main {
     margin: 0;
 
 }
-
+.icons .fa-brands:hover{
+    transform: translatey(-0.25em);
+    
+}
 .nav-link {
     color:#42b979;
  }
@@ -479,6 +482,10 @@ button[type="submit"]:hover{
     /* box-shadow: 0 2px 4px 0 #ddd; */
     display: none;
 }
+.goToTop .fa-solid:hover{
+    transform: translatey(-0.25em);
+
+}
 /* footer */
 footer{
     width:100%;
@@ -555,6 +562,7 @@ ul.social-network li {
         width: 100%;
         justify-content: center;
     }
+ 
 }
 
 

@@ -15,7 +15,7 @@
 }
 
 .whatsAppMsgBox12 {
-    box-shadow: 0 0 3px 0px #ddd;
+    border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 7px;
     overflow: hidden;
@@ -126,7 +126,9 @@
     width: 50px;
     height: 50px;
     background-color: #fff;
-    box-shadow: 0 0 5px 2px #ddd;
+    /* box-shadow: 0 0 5px 2px #ddd; */
+    border: 1px solid #ddd;
+
     border-radius: 50%;
     display: grid;
     place-items: center;
