@@ -62,6 +62,11 @@
                                             id="option-2">
                                         <label for="option-2">Tutor for Home</label>
                                     </li>
+                                    <li class="d-flex align-items-center fs-5 py-2">
+                                        <input class="m-2 d-none chose-subject" type="radio" value="Tutor for home" name="subjects"
+                                            id="option-3">
+                                        <label for="option-3">Both</label>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -74,12 +79,14 @@
                                 <input required name="Email" type="email" placeholder="*Email"  class="inp-1">
                                 <input required name="Mobile number" type="number" placeholder="*Mobile"  min="0" class="inp-1">
                                 <div class="col-12 ">
-                                    <select class="form-select py-2 mx-auto" style="width: 86%;" aria-label="Default select example" name="Time Availbility">
+                                    <!-- <select class="form-select py-2 mx-auto" style="width: 86%;" aria-label="Default select example" name="Time Availbility">
                                         <option selected>Time Availbilty</option>
                                         <option value="10 - 11">10 - 11</option>
                                         <option value="11 - 12">11 - 12</option>
                                         <option value="12 - 01">12 - 01</option>
-                                    </select>
+                                    </select> -->
+                                    <input class="inp-1" title="Class start time" type="time" name="Class time" id="classStartTime">
+                                    <input class="inp-1" title="Class end time" disabled type="time" name="Class time" id="classEndTime">
                                 </div>
 
                             </div>
@@ -120,27 +127,47 @@
 
                     </div>
 
-                    <div class="col-12 my-5 d-flex justify-content-around">
+                    <div class="col-12 my-5 d-flex justify-content-center px-5">
                         <input onclick="backStep(this)" id="back-btn" type="button" value="Previous"
-                            class="border-0 bg-body-secondary text-dark fs-4 py-1 px-4 me-5 rounded d-none">
+                            class="border-0 bg-body-secondary text-dark fs-6 py-1 px-4 rounded d-none">
                         <input onclick="NextStep(this)" id="next-btn" type="button" value="Next"
-                            class="border-0 bg_theme_green text-light fs-4 py-1 px-4 ms-5 rounded">
+                            class="border-0 bg_theme_green text-light fs-6 py-1 px-4 rounded">
                     </div>
                 </form>
 
 
             </div>
-            <span class="text-center py-3 fs-5">
-                If you are facing any problem kindly<a href="#" class="theme_text_green text-decoration-none">
-                    <b>Contact Us</b></a>
-                or write to<a href="mailto:info@eduexceledu.com"class="theme_text_green text-decoration-none">
-                    <b>info@eduexceledu.com</b></a>
-            </span>
 
 
 
         </div>
         </div>
+
+        <footer class="row text-center text-lg-start justify-content-center m-0 p-0">
+            <div class="col-12 footer-bottom text-light">
+             
+            </div>
+        
+            <div class="col-12 footer-bottom">
+              <ul class="p-3 text-center">
+                <li class="d-inline text-light">© Copyright 2024.</li>
+                <li class="d-inline text-light">All Rights Reserved.</li>
+                <li class="d-inline">
+                  <a class="text-decoration-none text-light" href="#">Privacy Policy</a>
+                </li>
+                <li class="d-inline text-light">|</li>
+                <li class="d-inline">
+                  <a class="text-decoration-none text-light" href="#">Terms & Conditions</a>
+                </li>
+                <li class="d-inline text-light">|</li>
+                <li class="d-inline text-light">Managed by</li>
+                <li class="d-inline">
+                  <a class="text-decoration-none text-light" href="#">Techtrack</a>
+                </li>
+              </ul>
+            </div>
+           
+          </footer>
 
     </main>
     <script src="./js/hire_tutor.js"></script>
