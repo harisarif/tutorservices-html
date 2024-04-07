@@ -3,149 +3,143 @@
     position: fixed;
     bottom: 4px;
     right: 30px;
-    z-index:99999;
-}
+  }
 
-#toggleWhatsAppChat {
+  #toggleWhatsAppChat {
     display: none;
-}
+  }
 
-.whatsApp_button_Warpper12:has(#toggleWhatsAppChat:checked) .whatsAppMsgBox12 {
+  .whatsApp_button_Warpper12:has(#toggleWhatsAppChat:checked)
+    .whatsAppMsgBox12 {
     display: block;
-}
+  }
 
-.whatsAppMsgBox12 {
-    border: 1px solid #ddd;
+  .whatsAppMsgBox12 {
+    box-shadow: 0 0 3px 0px #ddd;
     background-color: #fff;
     border-radius: 7px;
     overflow: hidden;
     display: none;
-}
+  }
 
-.WhatsApp_Msg_Box_header {
+  .WhatsApp_Msg_Box_header {
     background-color: #085e53;
     display: flex;
     align-items: center;
-}
+  }
 
-.WhatsApp_Msg_Box_header img {
-    width: 50px;
+  .WhatsApp_Msg_Box_header img {
+   width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 10px;
-    object-fit:contain;
-}
-
-.WhatsApp_Msg_Box_header .information h4 {
-    color: #fff;
-    margin:0;
-    font-size:18px;
-}
-
-.WhatsApp_Msg_Box_header .information p {
-    color: #ffffffdd;
-    font-size: .9rem;
-    padding: 0 3px;
-    margin:0;
-}
-
-.WhatsApp_Msg_Area {
     background-color: #fff;
-    background-image: url(https://taxiteam.be/images/whatsapp/bg.jpg);
-    background-size: cover;
+    object-fit: contain;
+    padding: 7px;
+  }
+.WhatsApp_Msg_Box_header .information{
+  line-height: 1.1rem;
 }
+  .WhatsApp_Msg_Box_header .information h4 {
+    color: #fff;
+	margin: 0;
+  }
 
-.WhatsApp_button_Msg p {
+  .WhatsApp_Msg_Box_header .information p {
+    color: #ffffffdd;
+    font-size: 0.9rem;
+    padding: 0 3px;
+	margin: 0;
+  }
+
+  .WhatsApp_Msg_Aria {
+    background-color: #fff;
+    background-image: url(../images/whatsapp_bg.jpg);
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+
+  .WhatsApp_button_Msg p {
     padding: 10px;
     background-color: #fff;
     margin: 20px;
     display: inline-block;
     border-radius: 3px;
-    border-top-right-radius: 0;
-    position:relative;
-}
+  }
 
-.WhatsApp_button_Msg{
-    height:241px;
-}
-
-.WhatsApp_button_Msg p::after {
-    content: '';
+  .WhatsApp_button_Msg p::before {
+    content: "";
     display: block;
-    position: absolute;
-    left: -10px;
-    top:-1px;
+    position: relative;
+    left: -25px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-bottom-color: #fff;
-    transform: rotate(45deg);
-}
+    transform: rotate(270deg);
+  }
 
-.WhatsApp_Msg_Area .startChat_wrapper {
+  .WhatsApp_Msg_Aria .startChat_wrapper {
     width: 100%;
     background: #fff;
     height: 60px;
     display: flex;
     align-items: center;
-}
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-.WhatsApp_Msg_Area .startChat_wrapper .start_chat {
-
+  .WhatsApp_Msg_Aria .startChat_wrapper .start_chat {
     border-radius: 25px;
     font-size: 1.1rem;
     border: none;
-    background-color: #25C656;
+    background-color: #25c656;
     color: #fff;
     margin: 0 auto;
-    display: block;
     height: 30px;
     width: 240px;
     display: flex;
     cursor: pointer;
+    column-gap: 10px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 5px;
-    font-size: 14px;
+  }
 
-    /* font-weight: 100; */
-}
-
-.Toggle_WhatsApp_Button_Wrapper {
+  .Toggle_WhatsApp_Button_Wrapper {
     display: flex;
     justify-content: end;
     padding: 10px 0;
-}
+  }
 
-.Toggle_WhatApp_Chat_Box {
+  .Toggle_WhatApp_Chat_Box {
     width: 50px;
     height: 50px;
     background-color: #fff;
-    /* box-shadow: 0 0 5px 2px #ddd; */
     border: 1px solid #ddd;
-
     border-radius: 50%;
     display: grid;
     place-items: center;
     color: #0cc243;
-    font-size: 30px;
+    font-size: 2rem;
     position: relative;
-    cursor: pointer;
-}
+  }
 
-.Toggle_WhatsApp_Button_Wrapper .Toggle_WhatApp_Chat_Box label {
+  .Toggle_WhatsApp_Button_Wrapper .Toggle_WhatApp_Chat_Box label {
     margin: 0;
+    line-height: 0;
     cursor: pointer;
-}
+  }
 
-.Toggle_WhatApp_Chat_Box::after {
+  .Toggle_WhatApp_Chat_Box::after {
     display: block;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -153,18 +147,4 @@
     position: absolute;
     top: 3px;
     right: 3px;
-}
-
-@media screen and (max-width: 480px) {
-    .WhatsApp_Msg_Area .startChat_wrapper .start_chat {
-        height:35px;
-        width:90%;
-        font-size:18px;
-    }
-    .whatsApp_button_Warpper12 {
-        min-width: 93%;
-        position: fixed;
-        bottom: 4px;
-        right: 16px;
-    }
-}
+  }
