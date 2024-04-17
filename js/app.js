@@ -1,5 +1,3 @@
-alert('new update')
-
 const toggleList = (heading, ToggleUl) => {
     const ul = document.getElementById(ToggleUl);
     if (ul.style.height != '200px') {
